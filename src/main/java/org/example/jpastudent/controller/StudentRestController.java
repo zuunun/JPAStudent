@@ -18,6 +18,11 @@ public class StudentRestController {
     @Autowired
     StudentRepository studentRepository;
 
+    @GetMapping("/")
+    public String gbtr(){
+        return "dehuf";
+    }
+
     @GetMapping("/addstudent")
     public List<Student> addStudent() {
         Student std = new Student();
